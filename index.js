@@ -78,16 +78,82 @@
 //     calback2(total);
 // }
 
-let ages=[18,16,21,17,19,90];
+// let ages=[18,16,21,17,19,90];
 
-let adults=ages.filter(checkAge);
+// let adults=ages.filter(checkAge);
 
-adults.forEach(print);
+// adults.forEach(print);
 
-function checkAge(element){
-    return element>=18;
-}
+// function checkAge(element){
+//     return element>=18;
+// }
 
-function print(element){
-    console.log(element);
-}
+// function print(element){
+//     console.log(element);
+// }
+
+// let cards=["A","2","3","4","5","6","7","8","9","20","j","k","Q"];
+
+// shuffle(cards);
+
+// console.log(cards);
+
+// cards.forEach((element)=>console.log(element));
+
+// function shuffle(cards){
+//     let currentIndex=cards.length-1;
+//     while(currentIndex!=0){
+//         let randIndex=Math.floor(Math.random()*cards.length);
+//         let temp=cards[currentIndex];
+//         cards[currentIndex]=cards[randIndex];
+//         cards[randIndex]=temp;
+//         currentIndex--;
+//     }
+// }
+
+//map
+
+// const store=new Map([
+//     ["t-shirt",20],
+//     ["jeans",30],
+//     ["socks",10],
+//     ["underwear",50]
+// ]);
+
+// store.forEach((value,key)=>console.log(`${key} $${value}`));
+
+//object
+
+//  const car={
+//     model:"Mustang",
+//     color:"red",
+//     year:2023,
+//     drive:function(){
+//         console.log("You drive the car");
+//     },
+//     brake:function(){
+//         console.log("You stop on the brakes");
+//     }
+//  }
+
+//  console.log(car.model);
+//  console.log(car.color);
+//  car.drive();
+
+//  console.log(this);
+
+ //class
+
+ class player{
+    score=0;
+    pause(){
+        console.log("You paused the game");
+    }
+    exit(){
+        console.log("You exited the game");
+    }
+ }
+
+ const player1=new player();
+ player1.score+=1;
+ console.log(player1.score);
